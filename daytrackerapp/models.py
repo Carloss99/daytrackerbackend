@@ -11,3 +11,4 @@ class Task(models.Model):
     notes = models.CharField(max_length=300)
     timestart = models.CharField(max_length=7)
     timeend = models.CharField(max_length=7)
+    date = models.DateField()

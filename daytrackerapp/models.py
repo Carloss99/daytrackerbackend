@@ -1,7 +1,7 @@
 
 from django.db import models
 from django.contrib.auth.models import User, Group
-import datetime
+
 
 
 
@@ -13,3 +13,4 @@ class Task(models.Model):
     timestart = models.CharField(max_length=7)
     timeend = models.CharField(max_length=7)
     date = models.CharField(max_length=30)
+    complete = models.BooleanField(default=False)
